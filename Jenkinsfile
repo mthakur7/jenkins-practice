@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('hi') {
       steps {
-        echo "Hello ubuntu" >> test.txt
+        sh 'echo "Hello ubuntu" >> test.txt'
       }
       
     }
