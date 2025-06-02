@@ -1,3 +1,4 @@
+@Library("Shared") _
 pipeline {
 
   agent {
@@ -15,6 +16,13 @@ pipeline {
         sh "mkdir -p learndevops"
       }
       
+    }
+    stage("name") {
+      steps { 
+        script {
+          hello("manjuthakur")
+        }
+      }
     }
       
   }
