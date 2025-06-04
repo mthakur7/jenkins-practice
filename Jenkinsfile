@@ -1,9 +1,6 @@
-@Library("Shared") _
 pipeline {
 
-  agent {
-   label "ubuntuagent"
- }
+  agent any
   stages {
     stage('hi') {
       steps {
@@ -17,13 +14,7 @@ pipeline {
       }
       
     }
-    stage("name") {
-      steps { 
-        script {
-          hello("manjuthakur")
-        }
-      }
-    }
+  
       
   }
    
